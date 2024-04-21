@@ -1,4 +1,12 @@
-# mgostoHAA
+# Shelly convert to HAA (old models)
+
+[![Donate](https://img.shields.io/badge/donate-PayPal-blue.svg)](https://paypal.me/ravensystem)
+
+[![Twitter](https://img.shields.io/twitter/follow/RavenSystem.svg?style=social)](https://twitter.com/RavenSystem)
+
+[![Chat](https://img.shields.io/discord/594630635696553994?style=social)](https://discord.com/servers/esp-homekit-devices-594630635696553994)
+
+<p align="center"><img width="300" src="https://raw.githubusercontent.com/RavenSystem/ravensystem-media/master/works-with-apple-home.svg"></p>
 
 A minimal firmware for OTA (over the air) flashing HAA target firmware
 starting from Mongoose OS.
@@ -9,8 +17,7 @@ is tailored to use HAA Latest Release Version only.
 ## Overview
 
 This is an intermediate firmware that can be used to install [HAA HomeKit firmware](https://github.com/RavenSystem/esp-homekit-devices)
-on various Shelly models. It will install the latest released version, and you
-can continue from there to your favourite target release.
+on various Shelly models. It will install the latest `fullhaaboot.bin` released version.
 
 ## Install
 
@@ -24,12 +31,12 @@ but be aware the application is still at an early stage. If something fails,
 your device may be bricked, if you don't know how to flash a new firmware over
 a wired connection._
 
-Before flashing this firmware, connect your device to a WIFI network with
+Before flashing this firmware, connect your device to a WiFi network with
 internet access. From your browser, open the update URL for your device from the
 table below. Replace `shellyip` with the IP address of your Shelly. The device
 will restart one or two times and attempt to download . If this download
 succeeds, the device will restart again, and you will see a new WIFI network
-labeled _HAA-????_. This process should take no longer than 4 - 5 minutes,
+labeled `HAA-??????`. This process should take no longer than 4 - 5 minutes,
 depending on your network connection.
 
 If the download fails, or your internet connection is disrupted, simply turn the
@@ -41,25 +48,25 @@ which you can use for recovery.
 
 Device | Update URL
 --- | ---
-Shelly 1        | `http://ravensystem.github.io/mgostoHAA/HAA-Shelly1.zip`
-Shelly 1PM      | `http://ravensystem.github.io/mgostoHAA/HAA-Shelly1PM.zip`
-Shelly 1L       | `http://ravensystem.github.io/mgostoHAA/HAA-Shelly1L.zip`
-Shelly Plug S   | `http://ravensystem.github.io/mgostoHAA/HAA-ShellyPlugS.zip`
-Shelly 2        | `http://ravensystem.github.io/mgostoHAA/HAA-Shelly2.zip` 
-Shelly 2.5      | `http://ravensystem.github.io/mgostoHAA/HAA-Shelly25.zip`
-Shelly RGBW2    | `http://ravensystem.github.io/mgostoHAA/HAA-ShellyRGBW2.zip`
-Shelly Dimmer 1 | `http://ravensystem.github.io/mgostoHAA/HAA-ShellyDimmer1.zip`
-Shelly Dimmer 2 | `http://ravensystem.github.io/mgostoHAA/HAA-ShellyDimmer2.zip`
-Shelly EM       | `http://ravensystem.github.io/mgostoHAA/HAA-ShellyEM.zip`
-Shelly Bulb     | `http://ravensystem.github.io/mgostoHAA/HAA-ShellyBulb.zip`
-Shelly Vintage  | `http://ravensystem.github.io/mgostoHAA/HAA-ShellyVintage.zip`
-Shelly Plug US  | `http://ravensystem.github.io/mgostoHAA/HAA-ShellyPlugUS.zip`
-Shelly Duo      | `http://ravensystem.github.io/mgostoHAA/HAA-ShellyBulbDuo.zip`
-Shelly H&T      | `http://ravensystem.github.io/mgostoHAA/HAA-ShellyHT.zip`
-Shelly i3       | `http://ravensystem.github.io/mgostoHAA/HAA-ShellyI3.zip`
-Shelly Plug 2   | `http://ravensystem.github.io/mgostoHAA/HAA-ShellyPlug2.zip`
-Shelly Uni      | `http://ravensystem.github.io/mgostoHAA/HAA-ShellyUni.zip`
-Shelly Duo RGBW | `http://ravensystem.github.io/mgostoHAA/HAA-ShellyDuoRGBW.zip`
+Shelly 1        | `http://shellyip/ota?url=https://ravensystem.github.io/mgostoHAA/HAA-Shelly1.zip`
+Shelly 1PM      | `http://shellyip/ota?url=https://ravensystem.github.io/mgostoHAA/HAA-Shelly1PM.zip`
+Shelly 1L       | `http://shellyip/ota?url=https://ravensystem.github.io/mgostoHAA/HAA-Shelly1L.zip`
+Shelly Plug S   | `http://shellyip/ota?url=https://ravensystem.github.io/mgostoHAA/HAA-ShellyPlugS.zip`
+Shelly 2        | `http://shellyip/ota?url=https://ravensystem.github.io/mgostoHAA/HAA-Shelly2.zip` 
+Shelly 2.5      | `http://shellyip/ota?url=https://ravensystem.github.io/mgostoHAA/HAA-Shelly25.zip`
+Shelly RGBW2    | `http://shellyip/ota?url=https://ravensystem.github.io/mgostoHAA/HAA-ShellyRGBW2.zip`
+Shelly Dimmer 1 | `http://shellyip/ota?url=https://ravensystem.github.io/mgostoHAA/HAA-ShellyDimmer1.zip`
+Shelly Dimmer 2 | `http://shellyip/ota?url=https://ravensystem.github.io/mgostoHAA/HAA-ShellyDimmer2.zip`
+Shelly EM       | `http://shellyip/ota?url=https://ravensystem.github.io/mgostoHAA/HAA-ShellyEM.zip`
+Shelly Bulb     | `http://shellyip/ota?url=https://ravensystem.github.io/mgostoHAA/HAA-ShellyBulb.zip`
+Shelly Vintage  | `http://shellyip/ota?url=https://ravensystem.github.io/mgostoHAA/HAA-ShellyVintage.zip`
+Shelly Plug US  | `http://shellyip/ota?url=https://ravensystem.github.io/mgostoHAA/HAA-ShellyPlugUS.zip`
+Shelly Duo      | `http://shellyip/ota?url=https://ravensystem.github.io/mgostoHAA/HAA-ShellyBulbDuo.zip`
+Shelly H&T      | `http://shellyip/ota?url=https://ravensystem.github.io/mgostoHAA/HAA-ShellyHT.zip`
+Shelly i3       | `http://shellyip/ota?url=https://ravensystem.github.io/mgostoHAA/HAA-ShellyI3.zip`
+Shelly Plug 2   | `http://shellyip/ota?url=https://ravensystem.github.io/mgostoHAA/HAA-ShellyPlug2.zip`
+Shelly Uni      | `http://shellyip/ota?url=https://ravensystem.github.io/mgostoHAA/HAA-ShellyUni.zip`
+Shelly Duo RGBW | `http://shellyip/ota?url=https://ravensystem.github.io/mgostoHAA/HAA-ShellyDuoRGBW.zip`
 
 
 ## Build the firmware yourself
