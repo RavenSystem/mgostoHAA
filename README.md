@@ -8,8 +8,9 @@
 
 <p align="center"><img width="300" src="https://raw.githubusercontent.com/RavenSystem/ravensystem-media/master/works-with-apple-home.svg"></p>
 
-A minimal firmware for OTA (over the air) flashing HAA target firmware
-starting from Mongoose OS.
+A minimal firmware for OTA (over the air) flashing HAA target firmware starting from Mongoose OS for old Shelly devices (gen1).
+
+For newer Shelly devices (Plus, Pro and Mini), use this instead: [mgos32 to HAA](https://github.com/RavenSystem/mgos32toHAA)
 
 Original repository at https://github.com/yaourdt/mgos-to-tasmota. This repository
 is tailored to use HAA Latest Release Version only.
