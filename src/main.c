@@ -32,7 +32,7 @@ rboot_config *rboot_cfg;
 	length	block length / byte
 */
 void block_copy(uint32 src, uint32 dest, uint32 length) {
-	LOG(LL_DEBUG, ("block_copy start: cp %d bytes from 0x%x to 0x%x", length, src, dest));
+	LOG(LL_DEBUG, ("block_copy start: cp %ld bytes from 0x%lx to 0x%lx", length, src, dest));
 	uint32 chunk = CHUNK_SIZE, offset = 0;
 	bool done    = false;
 	char *data   = NULL;
@@ -109,13 +109,13 @@ static void http_cb(struct mg_connection *c, int ev, void *ev_data, void *ud) {
 			memcpy(&state->data[BLOCK_SIZE - state->left_in_block], hm->body.p, state->left_in_block);
 
 			if ( spi_flash_erase_sector(state->curr_blk) != 0 ) {
-				LOG(LL_ERROR, ("flash delete error! abort at %d recieved bytes.", state->recieved));
+				LOG(LL_ERROR, ("flash delete error! abort at %ld recieved bytes.", state->recieved));
 				c->flags |= MG_F_CLOSE_IMMEDIATELY;
 				state->status = 500;
 				break;
 			}
 			if ( spi_flash_write( state->curr_blk * BLOCK_SIZE, (uint32 *) state->data, BLOCK_SIZE) != 0 ) {
-				LOG(LL_ERROR, ("flash write error! abort at %d recieved bytes.", state->recieved));
+				LOG(LL_ERROR, ("flash write error! abort at %ld recieved bytes.", state->recieved));
 				c->flags |= MG_F_CLOSE_IMMEDIATELY;
 				state->status = 500;
 				break;
@@ -136,17 +136,17 @@ static void http_cb(struct mg_connection *c, int ev, void *ev_data, void *ud) {
 		break;
 	case MG_EV_CLOSE:
 		// executed upon close connection
-		LOG(LL_INFO, ("HTTP status is %d, recieved %d bytes", state->status, state->recieved));
+		LOG(LL_INFO, ("HTTP status is %d, recieved %ld bytes", state->status, state->recieved));
 		if (state->status == 200) {
 			// write last block
 			if ( spi_flash_erase_sector(state->curr_blk) != 0 ) {
-				LOG(LL_ERROR, ("flash delete error! abort at %d recieved bytes.", state->recieved));
+				LOG(LL_ERROR, ("flash delete error! abort at %ld recieved bytes.", state->recieved));
 				state->status = 500;
 				break;
 			}
 			state->left_in_block = ( (state->curr_blk + 1) * BLOCK_SIZE ) - state->dest - state->recieved;
 			if ( spi_flash_write( state->curr_blk * BLOCK_SIZE, (uint32 *) state->data, BLOCK_SIZE - state->left_in_block) != 0 ) {
-				LOG(LL_ERROR, ("flash write error! abort at %d recieved bytes.", state->recieved));
+				LOG(LL_ERROR, ("flash write error! abort at %ld recieved bytes.", state->recieved));
 				state->status = 500;
 				break;
 			}
@@ -175,7 +175,7 @@ void download_file_to_flash(const char *url, uint32 dest) {
 	state->recieved = 0;
 	state->curr_blk = dest / BLOCK_SIZE;
 
-	LOG(LL_DEBUG, ("fetching %s to 0x%x", url, dest));
+	LOG(LL_DEBUG, ("fetching %s to 0x%lx", url, dest));
 	if (!mg_connect_http(mgos_get_mgr(), http_cb, state, url, NULL, NULL)) {
 		free(state);
 		LOG(LL_ERROR, ("malformed URL"));
