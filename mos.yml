@@ -9,7 +9,7 @@ mongoose_os_version: ${mos.version}
 manifest_version:    2020-01-29
 sources:             [src]
 filesystem:          [fs]
-tags:                [c, tuya, tasmota, mongoose]
+tags:                [c, tuya, haa, mongoose]
 
 # Custom configuration
 config_schema:
@@ -34,10 +34,10 @@ libs:
   - origin: https://github.com/mongoose-os-libs/ota-http-server         # local OTA update via HTTP POST
 
 conds:
-  - when: build_vars.TARGETFW == "tasmota"
+  - when: build_vars.TARGETFW == "haa"
     apply:
       config_schema:
-        - ["mg2x.url", "s", "https://ota.tasmota.com/tasmota/release/tasmota.bin", {"title": "URL of target firmware"}]
+        - ["mg2x.url", "s", "https://github.com/RavenSystem/haa/releases/latest/download/fullhaaboot.bin", {"title": "URL of target firmware"}]
   - when: build_vars.MODEL == "Shelly1"
     apply:
       name: switch1
