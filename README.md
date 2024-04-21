@@ -29,7 +29,7 @@ internet access. From your browser, open the update URL for your device from the
 table below. Replace `shellyip` with the IP address of your Shelly. The device
 will restart one or two times and attempt to download . If this download
 succeeds, the device will restart again, and you will see a new WIFI network
-labeled _-????_. This process should take no longer than 4 - 5 minutes,
+labeled _HAA-????_. This process should take no longer than 4 - 5 minutes,
 depending on your network connection.
 
 If the download fails, or your internet connection is disrupted, simply turn the
@@ -41,25 +41,25 @@ which you can use for recovery.
 
 Device | Update URL
 --- | ---
-Shelly 1        | `http://shellyip/ota?url=http://ota.tasmota.com/tasmota/shelly/mg2tasmota-Shelly1.zip`
-Shelly 1PM      | `http://shellyip/ota?url=http://ota.tasmota.com/tasmota/shelly/mg2tasmota-Shelly1PM.zip`
-Shelly 1L       | `http://shellyip/ota?url=http://ota.tasmota.com/tasmota/shelly/mg2tasmota-Shelly1L.zip`
-Shelly Plug S   | `http://shellyip/ota?url=http://ota.tasmota.com/tasmota/shelly/mg2tasmota-ShellyPlugS.zip`
-Shelly 2        | `http://shellyip/ota?url=http://ota.tasmota.com/tasmota/shelly/mg2tasmota-Shelly2.zip` 
-Shelly 2.5      | `http://shellyip/ota?url=http://ota.tasmota.com/tasmota/shelly/mg2tasmota-Shelly25.zip`
-Shelly RGBW2    | `http://shellyip/ota?url=http://ota.tasmota.com/tasmota/shelly/mg2tasmota-ShellyRGBW2.zip`
-Shelly Dimmer 1 | `http://shellyip/ota?url=http://ota.tasmota.com/tasmota/shelly/mg2tasmota-ShellyDimmer1.zip`
-Shelly Dimmer 2 | `http://shellyip/ota?url=http://ota.tasmota.com/tasmota/shelly/mg2tasmota-ShellyDimmer2.zip`
-Shelly EM       | `http://shellyip/ota?url=http://ota.tasmota.com/tasmota/shelly/mg2tasmota-ShellyEM.zip`
-Shelly Bulb     | `http://shellyip/ota?url=http://ota.tasmota.com/tasmota/shelly/mg2tasmota-ShellyBulb.zip`
-Shelly Vintage  | `http://shellyip/ota?url=http://ota.tasmota.com/tasmota/shelly/mg2tasmota-ShellyVintage.zip`
-Shelly Plug US  | `http://shellyip/ota?url=http://ota.tasmota.com/tasmota/shelly/mg2tasmota-ShellyPlugUS.zip`
-Shelly Duo      | `http://shellyip/ota?url=http://ota.tasmota.com/tasmota/shelly/mg2tasmota-ShellyBulbDuo.zip`
-Shelly H&T      | `http://shellyip/ota?url=http://ota.tasmota.com/tasmota/shelly/mg2tasmota-ShellyHT.zip`
-Shelly i3       | `http://shellyip/ota?url=http://ota.tasmota.com/tasmota/shelly/mg2tasmota-ShellyI3.zip`
-Shelly Plug 2   | `http://shellyip/ota?url=http://ota.tasmota.com/tasmota/shelly/mg2tasmota-ShellyPlug2.zip`
-Shelly Uni      | `http://shellyip/ota?url=http://ota.tasmota.com/tasmota/shelly/mg2tasmota-ShellyUni.zip`
-Shelly Duo RGBW | `http://shellyip/ota?url=http://ota.tasmota.com/tasmota/shelly/mg2tasmota-ShellyDuoRGBW.zip`
+Shelly 1        | `http://ravensystem.github.io/mgostoHAA/HAA-Shelly1.zip`
+Shelly 1PM      | `http://ravensystem.github.io/mgostoHAA/HAA-Shelly1PM.zip`
+Shelly 1L       | `http://ravensystem.github.io/mgostoHAA/HAA-Shelly1L.zip`
+Shelly Plug S   | `http://ravensystem.github.io/mgostoHAA/HAA-ShellyPlugS.zip`
+Shelly 2        | `http://ravensystem.github.io/mgostoHAA/HAA-Shelly2.zip` 
+Shelly 2.5      | `http://ravensystem.github.io/mgostoHAA/HAA-Shelly25.zip`
+Shelly RGBW2    | `http://ravensystem.github.io/mgostoHAA/HAA-ShellyRGBW2.zip`
+Shelly Dimmer 1 | `http://ravensystem.github.io/mgostoHAA/HAA-ShellyDimmer1.zip`
+Shelly Dimmer 2 | `http://ravensystem.github.io/mgostoHAA/HAA-ShellyDimmer2.zip`
+Shelly EM       | `http://ravensystem.github.io/mgostoHAA/HAA-ShellyEM.zip`
+Shelly Bulb     | `http://ravensystem.github.io/mgostoHAA/HAA-ShellyBulb.zip`
+Shelly Vintage  | `http://ravensystem.github.io/mgostoHAA/HAA-ShellyVintage.zip`
+Shelly Plug US  | `http://ravensystem.github.io/mgostoHAA/HAA-ShellyPlugUS.zip`
+Shelly Duo      | `http://ravensystem.github.io/mgostoHAA/HAA-ShellyBulbDuo.zip`
+Shelly H&T      | `http://ravensystem.github.io/mgostoHAA/HAA-ShellyHT.zip`
+Shelly i3       | `http://ravensystem.github.io/mgostoHAA/HAA-ShellyI3.zip`
+Shelly Plug 2   | `http://ravensystem.github.io/mgostoHAA/HAA-ShellyPlug2.zip`
+Shelly Uni      | `http://ravensystem.github.io/mgostoHAA/HAA-ShellyUni.zip`
+Shelly Duo RGBW | `http://ravensystem.github.io/mgostoHAA/HAA-ShellyDuoRGBW.zip`
 
 
 ## Build the firmware yourself
