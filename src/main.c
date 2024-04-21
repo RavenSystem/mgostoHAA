@@ -190,7 +190,7 @@ void download_file_to_flash(const char *url, uint32 dest) {
 // if we are online, lets download and flash tasmota
 static void online_cb(int ev, void *evd, void *arg) {
 	if ( ev == MGOS_NET_EV_IP_ACQUIRED ) {
-		LOG(LL_INFO, ("device is online, downloading tasmota"));
+		LOG(LL_INFO, ("device is online, downloading fullhaaboot.bin"));
 		download_file_to_flash(mgos_sys_config_get_mg2x_url(), (*rboot_cfg).roms[TEMP_STORAGE] );
 	}
 	(void) evd;
