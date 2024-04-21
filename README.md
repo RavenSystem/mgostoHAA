@@ -48,25 +48,25 @@ which you can use for recovery.
 
 Device | Update URL
 --- | ---
-Shelly 1        | `http://shellyip/ota?url=https://ravensystem.github.io/mgostoHAA/HAA-Shelly1.zip`
-Shelly 1PM      | `http://shellyip/ota?url=https://ravensystem.github.io/mgostoHAA/HAA-Shelly1PM.zip`
-Shelly 1L       | `http://shellyip/ota?url=https://ravensystem.github.io/mgostoHAA/HAA-Shelly1L.zip`
-Shelly Plug S   | `http://shellyip/ota?url=https://ravensystem.github.io/mgostoHAA/HAA-ShellyPlugS.zip`
-Shelly 2        | `http://shellyip/ota?url=https://ravensystem.github.io/mgostoHAA/HAA-Shelly2.zip` 
-Shelly 2.5      | `http://shellyip/ota?url=https://ravensystem.github.io/mgostoHAA/HAA-Shelly25.zip`
-Shelly RGBW2    | `http://shellyip/ota?url=https://ravensystem.github.io/mgostoHAA/HAA-ShellyRGBW2.zip`
-Shelly Dimmer 1 | `http://shellyip/ota?url=https://ravensystem.github.io/mgostoHAA/HAA-ShellyDimmer1.zip`
-Shelly Dimmer 2 | `http://shellyip/ota?url=https://ravensystem.github.io/mgostoHAA/HAA-ShellyDimmer2.zip`
-Shelly EM       | `http://shellyip/ota?url=https://ravensystem.github.io/mgostoHAA/HAA-ShellyEM.zip`
-Shelly Bulb     | `http://shellyip/ota?url=https://ravensystem.github.io/mgostoHAA/HAA-ShellyBulb.zip`
-Shelly Vintage  | `http://shellyip/ota?url=https://ravensystem.github.io/mgostoHAA/HAA-ShellyVintage.zip`
-Shelly Plug US  | `http://shellyip/ota?url=https://ravensystem.github.io/mgostoHAA/HAA-ShellyPlugUS.zip`
-Shelly Duo      | `http://shellyip/ota?url=https://ravensystem.github.io/mgostoHAA/HAA-ShellyBulbDuo.zip`
-Shelly H&T      | `http://shellyip/ota?url=https://ravensystem.github.io/mgostoHAA/HAA-ShellyHT.zip`
-Shelly i3       | `http://shellyip/ota?url=https://ravensystem.github.io/mgostoHAA/HAA-ShellyI3.zip`
-Shelly Plug 2   | `http://shellyip/ota?url=https://ravensystem.github.io/mgostoHAA/HAA-ShellyPlug2.zip`
-Shelly Uni      | `http://shellyip/ota?url=https://ravensystem.github.io/mgostoHAA/HAA-ShellyUni.zip`
-Shelly Duo RGBW | `http://shellyip/ota?url=https://ravensystem.github.io/mgostoHAA/HAA-ShellyDuoRGBW.zip`
+Shelly 1        | `http://shellyip/ota?url=http://mgostohaa.ravensystem.es/HAA-Shelly1.zip`
+Shelly 1PM      | `http://shellyip/ota?url=http://mgostohaa.ravensystem.es/HAA-Shelly1PM.zip`
+Shelly 1L       | `http://shellyip/ota?url=http://mgostohaa.ravensystem.es/HAA-Shelly1L.zip`
+Shelly Plug S   | `http://shellyip/ota?url=http://mgostohaa.ravensystem.es/HAA-ShellyPlugS.zip`
+Shelly 2        | `http://shellyip/ota?url=http://mgostohaa.ravensystem.es/HAA-Shelly2.zip` 
+Shelly 2.5      | `http://shellyip/ota?url=http://mgostohaa.ravensystem.es/HAA-Shelly25.zip`
+Shelly RGBW2    | `http://shellyip/ota?url=http://mgostohaa.ravensystem.es/HAA-ShellyRGBW2.zip`
+Shelly Dimmer 1 | `http://shellyip/ota?url=http://mgostohaa.ravensystem.es/HAA-ShellyDimmer1.zip`
+Shelly Dimmer 2 | `http://shellyip/ota?url=http://mgostohaa.ravensystem.es/HAA-ShellyDimmer2.zip`
+Shelly EM       | `http://shellyip/ota?url=http://mgostohaa.ravensystem.es/HAA-ShellyEM.zip`
+Shelly Bulb     | `http://shellyip/ota?url=http://mgostohaa.ravensystem.es/HAA-ShellyBulb.zip`
+Shelly Vintage  | `http://shellyip/ota?url=http://mgostohaa.ravensystem.es/HAA-ShellyVintage.zip`
+Shelly Plug US  | `http://shellyip/ota?url=http://mgostohaa.ravensystem.es/HAA-ShellyPlugUS.zip`
+Shelly Duo      | `http://shellyip/ota?url=http://mgostohaa.ravensystem.es/HAA-ShellyBulbDuo.zip`
+Shelly H&T      | `http://shellyip/ota?url=http://mgostohaa.ravensystem.es/HAA-ShellyHT.zip`
+Shelly i3       | `http://shellyip/ota?url=http://mgostohaa.ravensystem.es/HAA-ShellyI3.zip`
+Shelly Plug 2   | `http://shellyip/ota?url=http://mgostohaa.ravensystem.es/HAA-ShellyPlug2.zip`
+Shelly Uni      | `http://shellyip/ota?url=http://mgostohaa.ravensystem.es/HAA-ShellyUni.zip`
+Shelly Duo RGBW | `http://shellyip/ota?url=http://mgostohaa.ravensystem.es/HAA-ShellyDuoRGBW.zip`
 
 
 ## Build the firmware yourself
