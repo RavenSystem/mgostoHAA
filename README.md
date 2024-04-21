@@ -69,16 +69,17 @@ Shelly Plug 2   | `http://shellyip/ota?url=http://mgostohaa.ravensystem.es/HAA-S
 Shelly Uni      | `http://shellyip/ota?url=http://mgostohaa.ravensystem.es/HAA-ShellyUni.zip`
 Shelly Duo RGBW | `http://shellyip/ota?url=http://mgostohaa.ravensystem.es/HAA-ShellyDuoRGBW.zip`
 
+You must setup the MELPHAA script as your needs. [HAA Wiki](https://github.com/RavenSystem/esp-homekit-devices/wiki)
 
-## Build the firmware yourself
+In addition to this firmware, you can obtain [**HAA Home Manager App**](https://github.com/RavenSystem/esp-homekit-devices/wiki/haa-home-manager), the perfect App companion
+to manage your HAA devices, with batch updates, enable setup mode, and other extra features: 
 
-You can compile a binary version of this firmware using [mos tools](https://mongoose-os.com/docs/mongoose-os/quickstart/setup.md#1-download-and-install-mos-tool). Once installed, clone this repository and run
-`mos build --build-var MODEL=Shelly1 --build-var TARGETFW=haa --platform esp8266`
-to create a binary for e.g. a Shelly1 switch located in `build/fw.zip`.
+<p align="center"><a href="https://apps.apple.com/app/id1556105121"><img src="https://raw.githubusercontent.com/RavenSystem/ravensystem-media/master/haamanager_app.png"></a></p>
 
-## Acknowledgments
-Thanks to [rojer](https://github.com/rojer) for helping me with the debugging of
-the initial code.
+If you want to measure the performance of your Apple Home, you can get [**Home Bench App**](https://github.com/RavenSystem/esp-homekit-devices/wiki/home-bench), the only App that performs speed tests directly over accessories using Apple HomeKit API: 
 
-This firmware is build using a fork of [Mongoose OS docker action](https://github.com/dea82/mongoose-os-action)
-which can be found [here](https://github.com/yaourdt/mongoose-os-action).
+<p align="center"><a href="https://apps.apple.com/app/id6473729247"><img src="https://raw.githubusercontent.com/RavenSystem/ravensystem-media/master/homebench_app.png"></a></p>
+
+And don't forget to subscribe to YouTube Channel:
+
+<p align="center"><a href="https://www.youtube.com/channel/UCRumJzAoAnQ7dUpSnSUuuJw"><img width="40%" src="https://raw.githubusercontent.com/RavenSystem/ravensystem-media/master/YouTube_logo.png"></a></p>
