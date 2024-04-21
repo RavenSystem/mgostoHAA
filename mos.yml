@@ -37,7 +37,8 @@ conds:
   - when: build_vars.TARGETFW == "haa"
     apply:
       config_schema:
-        - ["mg2x.url", "s", "https://github.com/RavenSystem/haa/releases/latest/download/fullhaaboot.bin", {"title": "URL of target firmware"}]
+      # URL where fullhaaboot.bin file is stored
+        - ["mg2x.url", "s", "http://any_server/fullhaaboot.bin", {"title": "URL of target firmware"}]
   - when: build_vars.MODEL == "Shelly1"
     apply:
       name: switch1
