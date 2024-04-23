@@ -24,12 +24,12 @@ on various Shelly models. It will install the latest `fullhaaboot.bin` released 
 
 ## Install
 
-**Warning:** _This application should generally be safe to use for all supported
+:warning: _This application should generally be safe to use for all supported
 devices. Still, overwriting a device's bootloader via OTA update is a risky
 operation. If something unexpected fails, your device may be bricked, unless you
 know how to flash a new firmware over a wired connection._
 
-**Warning:** _You can go back to Mongoose OS via OTA as well, using [this firmware](https://github.com/yaourdt/tasmota-to-mgos),
+:warning: _You can go back to Mongoose OS via OTA as well, using [this firmware](https://github.com/yaourdt/tasmota-to-mgos),
 but be aware the application is still at an early stage. If something fails,
 your device may be bricked, if you don't know how to flash a new firmware over
 a wired connection._
