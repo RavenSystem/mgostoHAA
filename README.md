@@ -12,6 +12,8 @@ A minimal firmware for OTA (over the air) flashing HAA target firmware starting 
 
 For newer Shelly devices (Plus, Pro and Mini), use this instead: [mgos32 to HAA](https://github.com/RavenSystem/mgos32toHAA)
 
+:warning: **This is a third-party experimental project, without any relation with Shelly or Alterco. If you decide to try it, all is under your responsability :warning:**
+
 Original repository at https://github.com/yaourdt/mgos-to-tasmota. This repository
 is tailored to use HAA Latest Release Version only.
 
@@ -23,7 +25,7 @@ on various Shelly models. It will install the latest `fullhaaboot.bin` released 
 ## Install
 
 **Warning:** _This application should generally be safe to use for all supported
-devices. Still, overwriting a device's boot loader via OTA update is a risky
+devices. Still, overwriting a device's bootloader via OTA update is a risky
 operation. If something unexpected fails, your device may be bricked, unless you
 know how to flash a new firmware over a wired connection._
 
@@ -33,22 +35,22 @@ your device may be bricked, if you don't know how to flash a new firmware over
 a wired connection._
 
 Before flashing this firmware, connect your device to a WiFi network with
-internet access. From your browser, open the update URL for your device from the
+Internet access. From your browser, open the update URL for your device from the
 table below. Replace `shellyip` with the IP address of your Shelly. The device
-will restart one or two times and attempt to download . If this download
-succeeds, the device will restart again, and you will see a new WIFI network
+will restart one or two times and attempt to download. If this download
+succeeds, the device will restart again, and you will see a new WiFi network
 labeled `HAA-??????`. This process should take no longer than 4 - 5 minutes,
 depending on your network connection.
 
 If the download fails, or your internet connection is disrupted, simply turn the
 device off and on again, the intermediate firmware will retry until it succeeds.
 
-In the unlikely event that the WIFI credentials are wrong, the device will try
+In the unlikely event that the WiFi credentials are wrong, the device will try
 to connect to a backup WIFI with SSID _mgos-recover_ and password _RJoPuKC3u5_,
 which you can use for recovery.
 
 Device | Update URL
---- | ---
+------ | ----------
 Shelly 1        | `http://shellyip/ota?url=http://mgostohaa.ravensystem.es/HAA-Shelly1.zip`
 Shelly 1PM      | `http://shellyip/ota?url=http://mgostohaa.ravensystem.es/HAA-Shelly1PM.zip`
 Shelly 1L       | `http://shellyip/ota?url=http://mgostohaa.ravensystem.es/HAA-Shelly1L.zip`
