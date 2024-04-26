@@ -1,5 +1,9 @@
 # Shelly convert to HAA (old models)
 
+A minimal firmware for OTA (over the air) flashing HAA target firmware starting from Mongoose OS for old Shelly devices (gen1).
+
+For newer Shelly devices (Plus, Pro and Mini), use this instead: [mgos32 to HAA](https://github.com/RavenSystem/mgos32toHAA)
+
 [![Donate](https://img.shields.io/badge/donate-PayPal-blue.svg)](https://paypal.me/ravensystem)
 
 [![Twitter](https://img.shields.io/twitter/follow/RavenSystem.svg?style=social)](https://twitter.com/RavenSystem)
@@ -7,10 +11,6 @@
 [![Chat](https://img.shields.io/discord/594630635696553994?style=social)](https://discord.com/servers/esp-homekit-devices-594630635696553994)
 
 <p align="center"><img width="300" src="https://raw.githubusercontent.com/RavenSystem/ravensystem-media/master/works-with-apple-home.svg"></p>
-
-A minimal firmware for OTA (over the air) flashing HAA target firmware starting from Mongoose OS for old Shelly devices (gen1).
-
-For newer Shelly devices (Plus, Pro and Mini), use this instead: [mgos32 to HAA](https://github.com/RavenSystem/mgos32toHAA)
 
 :warning: **This is a third-party experimental project, without any relation with Shelly or Alterco. If you decide to try it, all is under your responsability :warning:**
 
