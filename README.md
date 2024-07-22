@@ -2,7 +2,7 @@
 
 A minimal firmware for OTA (over the air) flashing HAA target firmware starting from Mongoose OS for old Shelly devices (gen1).
 
-For newer Shelly devices (Plus, Pro and Mini), use this instead: [mgos32 to HAA](https://github.com/RavenSystem/mgos32toHAA)
+For newer Shelly devices (Gen3, Plus, Pro and Mini), use this instead: [mgos32 to HAA](https://github.com/RavenSystem/mgos32toHAA)
 
 [![Donate](https://img.shields.io/badge/donate-PayPal-blue.svg)](https://paypal.me/ravensystem)
 
